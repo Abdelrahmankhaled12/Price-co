@@ -103,6 +103,15 @@ header input {
   outline: none;
 }
 
+@media (max-width: 767px) {
+  header input {
+    width: 80%;
+    padding: 5px 30px;
+    font-size: 12px;
+    outline: none;
+  }
+}
+
 header .inputSearch .imgSearch {
   position: absolute;
   left: 5px;
@@ -116,6 +125,26 @@ header .imgFrame {
   top: 50%;
   transform: translateY(-50%);
   background-color: white;
+}
+
+header .close {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  width: 9%;
+  color: var(--second-color);
+  font-weight: 600;
+  display:none;
+}
+
+@media (max-width: 767px) {
+  header .imgFrame {
+    position: absolute;
+    right: 89px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+  } 
 }
 
 header ul.ul-1 {
