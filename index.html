@@ -16,7 +16,6 @@
     <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
     <!-- CSS file Main -->
     <link rel="stylesheet" href="./css/style.css">
-
     <title>PRICE & CO</title>
 </head>
 
@@ -41,20 +40,24 @@
             <div class="header text-center">
                 <p>20% Off! Code: SPRING23 - Terms apply*</p>
             </div>
-            <nav class="navbar">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img src="./images/logo.png" /></a>
-                    <div class="position-relative">
+            <nav class="navbar" id="nav">
+                <div class="container-lg">
+                    <a class="navbar-brand" href="#"><img src="./images/logo.png" class="logo" /></a>
+                    <div class="position-relative flex-grow-1 inputSearch" id="inputSearch">
                         <input type="text" placeholder="Search products, articles, faq, ..." />
                         <img src="./images/Search.png" alt="" class="imgSearch">
                         <img src="./images/frame.png" alt="" class="imgFrame">
                     </div>
+                    <button class="buttonSearch" id="buttonSearch"><img src="./images/Search.png" alt=""
+                            class="imgSearch"></button>
                     <div class="d-flex justify-between align-items-center">
-                        <ul class="d-flex align-items-center ul-1">
-                            <li> <img src="./images/findAStore.png" alt=""> Find a store</li>
-                            <li><img src="./images/Support.png" alt=""> Support</li>
-                        </ul>
-                        <div>
+                        <div class="d-none d-md-block">
+                            <ul class="d-flex align-items-center ul-1">
+                                <li class="d-flex"> <img src="./images/findAStore.png" alt=""> Find a store</li>
+                                <li class="d-flex"><img src="./images/Support.png" alt=""> Support</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex">
                             <img src="./images/Heart.png" alt="">
                             <img src="./images/Account.png" alt="" class="ms-2">
                             <img src="./images/Cart.png" alt="" class="ms-2">
@@ -208,26 +211,29 @@
     </div>
     <!-- End Categories -->
     <!-- Start Ordering -->
-    <div class="ordering overflow-hidden pb-md-5  wow  animate__fadeInUp" data-wow-duration="2s" data-hide="hide">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-12">
-                <div class="text pt-5 pb-5">
-                    <div class="container">
-                        <div class="content">
-                            <h2>Convenient Ordering & Delivery</h2>
-                            <p>We value your time, and our convenient ordering options reflect that. Place your
-                                orders
-                                effortlessly through our user-friendly online platform or enjoy the flexibility of
-                                mobile
-                                ordering through mobile allowing you to order on the go, anytime, anywhere. </p>
-                            <button><img src="./images/arrow.png" alt=""></button>
+    <div class="ordering overflow-hidden pb-md-5  wow  animate__fadeInUp position-relative" data-wow-duration="2s"
+        data-hide="hide">
+        <div class="backgroundColorOrdering">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <div class="text pt-5 pb-5">
+                            <div class="content">
+                                <h2>Convenient Ordering & Delivery</h2>
+                                <p>We value your time, and our convenient ordering options reflect that. Place your
+                                    orders
+                                    effortlessly through our user-friendly online platform or enjoy the flexibility of
+                                    mobile
+                                    ordering through mobile allowing you to order on the go, anytime, anywhere. </p>
+                                <button><img src="./images/arrow.png" alt=""></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-12">
-                <div class="position-relative">
-                    <img src="./images/croppedImage.png" alt="" class="shop">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div>
+                            <img src="./images/croppedImage.png" alt="" class="shop">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

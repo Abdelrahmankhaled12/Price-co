@@ -79,7 +79,7 @@ body {
   }
 }
 /* End animation */
-
+/* Start Header */
 .header {
   background-color: var(--primary-color);
   color: white;
@@ -90,14 +90,20 @@ body {
   padding: 2px 0px;
 }
 
+@media (max-width: 767px) {
+  header .logo {
+    width: 150px;
+  }
+}
+
 header input {
-  width: 430px;
+  width: 100%;
   padding: 5px 30px;
   font-size: 12px;
   outline: none;
 }
 
-header .imgSearch {
+header .inputSearch .imgSearch {
   position: absolute;
   left: 5px;
   top: 50%;
@@ -109,6 +115,7 @@ header .imgFrame {
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
+  background-color: white;
 }
 
 header ul.ul-1 {
@@ -117,9 +124,50 @@ header ul.ul-1 {
   margin: 0 35px;
 }
 
+@media (max-width: 992px) {
+  header ul.ul-1 {
+    margin: 0 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inputSearch {
+    display: none;
+  }
+}
+
+header .buttonSearch {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: none;
+}
+
+header .buttonSearch img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+  header .buttonSearch {
+    display: block;
+  }
+}
+
 header ul.ul-1 li {
   font-size: 12px;
   margin: 0px 5px;
+}
+
+@media (max-width: 767px) {
+  header ul.ul-1 {
+    display: none;
+  }
 }
 
 header nav .navbar-collapse li a {
@@ -182,7 +230,8 @@ header .links ul li a {
   align-items: center;
   justify-content: space-between;
 }
-
+/* End Header */
+/* Start Landing */
 @media (min-width: 767px) {
   .landing {
     background-image: url("../images/landing2.png");
@@ -246,8 +295,29 @@ header .links ul li a {
   background-color: rgba(238, 236, 236, 1);
 }
 
-.ordering .text {
-  background-color: var(--primary-color);
+.backgroundColorOrdering {
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 70%,
+    rgba(238, 236, 236, 1) 70%
+  );
+}
+
+.backgroundColorOrdering {
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 70%,
+    rgba(238, 236, 236, 1) 70%
+  );
+}
+@media (max-width: 767px) {
+  .backgroundColorOrdering {
+    background: linear-gradient(
+      to bottom,
+      var(--primary-color) 70%,
+      rgba(238, 236, 236, 1) 70%
+    );
+  }
 }
 
 .ordering .text {
@@ -266,10 +336,15 @@ header .links ul li a {
 .ordering img.shop {
   position: absolute;
   right: 0%;
-  max-width: 750px;
+  max-width: 660px;
   top: 32px;
-  height: 285px;
   border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  .ordering img.shop {
+    max-width: 500px;
+    height: 420px;
+  }
 }
 
 @media (max-width: 992px) {

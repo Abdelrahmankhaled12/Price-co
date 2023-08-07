@@ -25,7 +25,21 @@ $('.owl-carousel').owlCarousel({
 let body = document.querySelectorAll('[data-hide="hide"]');
 let buttonScroll = document.getElementById("buttonScroll");
 let waviy = document.getElementById("waviy");
+let inputSearch = document.getElementById("inputSearch");
+let nav = document.getElementById("nav");
+let buttonSearch = document.getElementById("buttonSearch");
 
+
+buttonSearch.addEventListener('click',(e)=>{
+    let div = document.createElement('div');
+    inputSearch.style.display = 'block';
+    div.appendChild(inputSearch)
+    console.log(nav)
+    console.log(inputSearch)
+
+    nav.innerHTML = '';
+    nav.innerHTML = div.innerHTML;
+})
 
 
 window.onscroll = function () {
